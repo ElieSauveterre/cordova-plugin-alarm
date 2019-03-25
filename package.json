@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-alarm",
+  "version": "0.0.1",
+  "description": "Cordova Plugin Alarm",
+  "cordova": {
+    "id": "cordova-plugin-alarm",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElieSauveterre/cordova-plugin-alarm"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "alarm",
+    "alarm clock",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Elie Sauveterre",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/ElieSauveterre/cordova-plugin-alarm/issues"
+  },
+  "homepage": "https://github.com/ElieSauveterre/cordova-plugin-alarm#README.MD"
+}

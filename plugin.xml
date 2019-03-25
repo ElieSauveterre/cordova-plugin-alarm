@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="cordova-plugin-alarm"
+    version="0.0.1">
+
+    <name>Cordova Plugin Alarm</name>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <js-module src="www/alarm.js" name="alarm">
+        <clobbers target="alarm" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Alarm">
+                <param name="android-package" value="org.eliesauveterre.cordova.alarm.Alarm"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Alarm.java" target-dir="src/org/eliesauveterre/cordova/alarm"/>
+    </platform>
+
+</plugin>
