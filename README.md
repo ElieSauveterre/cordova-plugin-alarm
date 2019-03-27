@@ -5,7 +5,7 @@ Alarm plugin for Ionic
 **When the alarm is triggered a new webview is created and shown on top of the lock screen. Use the "alarmFired" event to know if the app was started by the alarm plugin.**
 
 
-####Platform Support
+#### Platform Support
 Android with Ionic only. The lock screen webview uses IonicWebViewEngine, it could be replaced by CordovaWebViewEngine to work for Cordova.
 
 
