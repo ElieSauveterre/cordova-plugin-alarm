@@ -21,7 +21,29 @@
             </feature>
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+            <uses-permission android:name="android.permission.VIBRATE"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <receiver android:name="org.eliesauveterre.cordova.alarm.AlarmReceiver" android:process=":remote">
+            </receiver>
+            <activity android:label="LockScreenActivity" android:name="org.eliesauveterre.cordova.alarm.LockScreenActivity"></activity>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
+            <intent-filter>
+                <action android:name="org.eliesauveterre.cordova.alarm.ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </config-file>
+
         <source-file src="src/android/Alarm.java" target-dir="src/org/eliesauveterre/cordova/alarm"/>
+        <source-file src="src/android/AlarmReceiver.java" target-dir="src/org/eliesauveterre/cordova/alarm"/>
+        <source-file src="src/android/LockScreenActivity.java" target-dir="src/org/eliesauveterre/cordova/alarm"/>
     </platform>
 
 </plugin>
