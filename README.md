@@ -1,5 +1,7 @@
 Alarm plugin for Ionic
 ===============
+This plugin allow to set an alarm. When the alarm trigger the app is launched and shown even on the lock screen of the phone.
+The user will see the alarm clock icon is the status bar and on the lock screen.
 
 #### Warning
 **When the alarm is triggered a new webview is created and shown on top of the lock screen. Use the "alarmFired" event to know if the app was started by the alarm plugin.**
