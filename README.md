@@ -39,9 +39,9 @@ window.alarm.snooze(successCallback, errorCallback);
 window.alarm.stop(successCallback, errorCallback);
 ```
 
-- Listen to alarm fire event
+- Check if app was started by the alarm
 
 The success callback return true when the webview was started by the alarm
 ```javascript
-window.alarm.alarmFired(successCallback, errorCallback);
+window.alarm.isFromAlarmTrigger(successCallback, errorCallback);
 ```
