@@ -73,10 +73,12 @@ public class Alarm extends CordovaPlugin {
                 return true;
             }
 
-            if (action.equals("alarmFired")) {
+            if (action.equals("isFromAlarmTrigger")) {
 
                 if (this.cordova.getActivity().getClass() == LockScreenActivity.class) {
                     callbackContext.success("true");
+                }else{
+                    callbackContext.success("false");
                 }
 
                 return true;

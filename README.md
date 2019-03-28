@@ -4,7 +4,7 @@ This plugin allow to set an alarm. When the alarm trigger the app is launched an
 The user will see the alarm clock icon is the status bar and on the lock screen.
 
 #### Warning
-**When the alarm is triggered a new webview is created and shown on top of the lock screen. Use the "alarmFired" event to know if the app was started by the alarm plugin.**
+**When the alarm is triggered a new webview is created and shown on top of the lock screen. Use the function "isFromAlarmTrigger" to know if the app was started by the alarm plugin.**
 
 
 #### Platform Support
@@ -41,7 +41,7 @@ window.alarm.stop(successCallback, errorCallback);
 
 - Listen to alarm fire event
 
-The success callback is only called on the webview launched by the alarm.
+The success callback return true when the webview was started by the alarm
 ```javascript
 window.alarm.alarmFired(successCallback, errorCallback);
 ```

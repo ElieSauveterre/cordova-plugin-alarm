@@ -15,8 +15,8 @@ var Alarm = {
     snooze: function (successCallback, errorCallback) {
         exec(successCallback, errorCallback, PLUGIN_NAME, "snooze", []);
     },
-    alarmFired: function (successCallback, errorCallback) {
-        exec(successCallback, errorCallback, PLUGIN_NAME, "alarmFired", []);
+    isFromAlarmTrigger: function (successCallback, errorCallback) {
+        exec(successCallback, errorCallback, PLUGIN_NAME, "isFromAlarmTrigger", []);
     }
 };
 
